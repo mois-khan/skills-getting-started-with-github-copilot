@@ -108,3 +108,28 @@ def signup_for_activity(activity_name: str, email: str):
     # Add student
     activity["participants"].append(email)
     return {"message": f"Signed up {email} for {activity_name}"}
+.participants-section {
+    margin: 0.7em 0 0.5em 0;
+    background: #f0f4fa;
+    padding: 0.6em 1em;
+    border-radius: 6px;
+}
+
+.participants-title {
+    font-weight: bold;
+    color: #2a4d7c;
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.participants-list {
+    margin: 0;
+    padding-left: 1.2em;
+    font-size: 0.97em;
+}
+
+.participants-list li {
+    color: #3a3a3a;
+    margin-bottom: 0.1em;
+    list-style-type: disc;
+}
